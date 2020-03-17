@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">iSonidos</string>
-    <string name="sonido">resplandorwii</string>
+    <string name="sonido01">resplandorwii</string>
+    <string name="sonido02">disparosxbox</string>
+    <string name="video01">slapchop_5_segundos</string>
+    <string name="video02">slapchop_fetuchini</string>
+    <string name="video03">slapchop_mira_mi_huevo</string>
+    <string name="video04">slapchop_no_es_bueno</string>
+    <string name="video05">slapchop_odias_hacer_ensaladas</string>
+    <string name="video06">slapchop_te_cuesta_un_dolar</string>
+    <string name="video07">slapchop_te_va_a_fascinar</string>
+    <string name="video08">slapchop_tu_vida_esta_mas_excitante</string>
 </resources>

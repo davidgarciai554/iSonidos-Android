@@ -6,17 +6,109 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="reproduceSonido"
-        android:tag="@string/sonido"
-        android:text="@string/sonido"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="@android:color/black">
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="@android:color/black">
+
+            <LinearLayout
+                android:id="@+id/botones"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/sonido01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sonido01"
+                    android:tag ="@string/sonido01"
+                    android:onClick="reproduceSonido" />
+
+                <Button
+                    android:id="@+id/sonido02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="reproduceSonido"
+                    android:tag="@string/sonido02"
+                    android:text="@string/sonido02" />
+                <Button
+                    android:id="@+id/video01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="reproduceVideo"
+                    android:tag="@string/video01"
+                    android:text="@string/video01" />
+                <Button
+                    android:id="@+id/video02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="reproduceVideo"
+                    android:tag="@string/video02"
+                    android:text="@string/video02" />
+                <Button
+                    android:id="@+id/video03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="reproduceVideo"
+                    android:tag="@string/video03"
+                    android:text="@string/video03" />
+                <Button
+                    android:id="@+id/video04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="reproduceVideo"
+                    android:tag="@string/video04"
+                    android:text="@string/video04" />
+                <Button
+                    android:id="@+id/video05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="reproduceVideo"
+                    android:tag="@string/video05"
+                    android:text="@string/video05" />
+                <Button
+                    android:id="@+id/video06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="reproduceVideo"
+                    android:tag="@string/video06"
+                    android:text="@string/video06" />
+                <Button
+                    android:id="@+id/video07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="reproduceVideo"
+                    android:tag="@string/video07"
+                    android:text="@string/video07" />
+                <Button
+                    android:id="@+id/video08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="reproduceVideo"
+                    android:tag="@string/video08"
+                    android:text="@string/video08" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
